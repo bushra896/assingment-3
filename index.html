@@ -15,27 +15,28 @@
   font-family: "Manrope", sans-serif;  
 }
     </style>
-    <!-- tailwind  -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'bg-primary': '#ABEF5F',
-              }
-            }
-          }
-        }
-      </script>
       <!-- daisy ui -->
       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
       <script src="https://cdn.tailwindcss.com"></script>
-      
+      <!-- tailwind  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              'bg-primary': '#ABEF5F',
+              'primary': 'rgba(171, 239, 95, 0.5)',
+              'bg-color': '#ABEF5F',
+            }
+          }
+        }
+      }
+    </script>
       
 </head>
 <body class="manrope">
-    <header class="mx-auto px-10 mt-10">
+    <header class="mx-auto px-10 mt-10 mb-16">
         <!-- navber -->
          <div class="flex justify-between">
          <div class="flex gap-5">
@@ -57,7 +58,101 @@
        <a class="btn bg-[#ABEF5F] rounded-xl">Book Consult <i class="fa-solid fa-arrow-right border-2 -rotate-45 border-black rounded-full text-white bg-black p-1"></i></a>
       </div>    
     </div>
+    <section>
+      <div class="card">
+        <figure class="px-10 pt-10">
+          <img
+            src="assets/banner.png"
+            alt="building" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-5xl font-extrabold mb-6">A barn house of this design has a <br> striking appearance</h2>
+          <p class="text-gray-500 mb-6">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+          <div class="card-actions">
+            <button class="btn bg-primary rounded-2xl">View Details<i class="fa-solid fa-arrow-right border-2 -rotate-45 rounded-full  bg-bg-primary p-1"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
     </header>
+    <main>
+      <section class="bg-bg-color">
+        <div class="hero bg-base-200">
+          <div class="hero-content flex-col lg:flex-row-reverse mt-11 mb-24">
+            <img
+              src="assets/Rectangle.png"
+              class="rounded-lg shadow-2xl" />
+            <div class="space-y-5">
+              <img src="assets/Vector.png" alt="">
+              <button class="border bg-white rounded-2xl px-4 py-2"><i class="fa-solid fa-arrow-right"></i>About Us</button>
+            <h2 class="font-bold text-4xl">We design thoughtful,<br> liveable spaces</h2>
+            <p class="text-gray-600">The barn house captivates with its blend of rustic charm and <br>
+              modern sophistication, featuring weathered wood, sleek metal accents.</p>
+              <div class="flex border bg-white rounded-xl px-16 py-8 gap-4">
+                <div>
+                <img src="assets/commercial.png" alt="">
+                </div>
+                <div>
+                  <h5 class="font-semibold">Commercial</h5>
+                  <p class="text-gray-600">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                </div>
+              </div>
+              <div class="flex border bg-white rounded-xl px-16 py-8 gap-4">
+                <div>
+                <img src="assets/residential.png" alt="">
+                </div>
+                <div>
+                  <h5 class="font-semibold">Residential</h5>
+                  <p class="text-gray-600">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-base-200 mb-5 mx-auto">
+        <div class="text-center space-y-5">
+        <button class="border bg-white rounded-2xl px-4 py-2"><i class="fa-solid fa-arrow-right"></i>How we works</button>
+        <h2 class="font-extrabold text-4xl">Our Works Process</h2>
+        <p class="text-gray-600">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <!-- cards  -->
+        <div class="grid lg:grid-cols-4 mx-auto px-28 mt-6 gap-5">
+          <!-- card  -->
+          <div class="card bg-[#E7C1D3]">
+            <div class="card-body">
+              <img class="w-11" src="assets/concept.png" alt="">
+              <h2 class="card-title">Concept</h2>
+              <p>To build up a house properly one must know the conceptual theory of the structure.</p>
+            </div>
+          </div>
+          <div class="card bg-[#EFDA6E]">
+            <div class="card-body">
+              <img class="w-11" src="assets/flow-chart.png" alt="">
+              <h2 class="card-title">Design Process</h2>
+              <p>Design is the most important thing in architecture.So buildings should be designed properly.</p>
+            </div>
+          </div>
+          <div class="card bg-[#A4DAC3]">
+            <div class="card-body">
+              <img class="w-11" src="assets/vision.png" alt="">
+              <h2 class="card-title">Supervision</h2>
+              <p>The barn house captivates with its blend of rustic charm and modern sophistication.</p>
+            </div>
+          </div>
+          <div class="card bg-[#77AAEA]">
+            <div class="card-body">
+              <img class="w-11" src="assets/budget-planning.png" alt="">
+              <h2 class="card-title">Budget Planning</h2>
+              <p>Lastly, the main task to build up a house properly is budget planning .</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
     
 </body>
 </html>
