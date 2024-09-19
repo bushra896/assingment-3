@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-3</title>
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3143c8471f.js" crossorigin="anonymous"></script>
+    <style>
+        .manrope {
+  font-family: "Manrope", sans-serif;  
+}
+    </style>
+    <!-- tailwind  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'bg-primary': '#ABEF5F',
+              }
+            }
+          }
+        }
+      </script>
+      <!-- daisy ui -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      
+      
 </head>
-<body>
+<body class="manrope">
+    <header class="mx-auto px-10 mt-10">
+        <!-- navber -->
+         <div class="flex justify-between">
+         <div class="flex gap-5">
+        <i class="fa-solid fa-arrow-right border -rotate-45 rounded-full bg-[#ABEF5F] p-1"></i>
+        <h3 class="font-bold text-4xl">Rinterio</h3>
+        </div>
+        <div>
+            <ul class="menu menu-horizontal">
+            <li class="font-medium"><a>Home</a></li>
+            <li class="text-gray-400"><a>Services</a></li>
+            <li class="text-gray-400"><a>Portfolio</a></li>
+            <li class="text-gray-400"><a>Blogs</a></li>
+            <li class="text-gray-400"><a>Contact Us</a></li>
+            </ul>
+        </div>
+      <div class=" flex gap-4">
+          <i class="fa-solid fa-magnifying-glass bg-white border p-2 rounded-full"></i>
+          <i class="fa-solid fa-cart-shopping bg-white border p-2 rounded-full"></i>  
+       <a class="btn bg-[#ABEF5F] rounded-xl">Book Consult <i class="fa-solid fa-arrow-right border-2 -rotate-45 border-black rounded-full text-white bg-black p-1"></i></a>
+      </div>    
+    </div>
+    </header>
     
 </body>
 </html>
