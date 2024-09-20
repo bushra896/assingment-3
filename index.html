@@ -14,6 +14,20 @@
         .manrope {
   font-family: "Manrope", sans-serif;  
 }
+.menu-icon{
+  display: none;
+}
+@media screen and (max-width: 576px){
+  .responsive{
+    display: none;
+  }
+  .menu-icon div{
+        width: 20px;
+        height: 3px;
+        background-color: black;
+        margin-bottom: 4px;
+    }
+}
     </style>
       <!-- daisy ui -->
       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -46,7 +60,13 @@
         <i class="fa-solid fa-arrow-right border -rotate-45 rounded-full bg-[#ABEF5F] p-1"></i>
         <h3 class="font-bold text-4xl">Rinterio</h3>
         </div>
-        <div>
+        <div class="menu-icon">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+
+        <div class="responsive">
             <ul class="menu menu-horizontal">
             <li class="font-medium"><a>Home</a></li>
             <li class="text-gray-400"><a>Services</a></li>
@@ -55,11 +75,13 @@
             <li class="text-gray-400"><a>Contact Us</a></li>
             </ul>
         </div>
+        <div class="responsive">
       <div class=" flex gap-4">
           <i class="fa-solid fa-magnifying-glass bg-white border p-2 rounded-full"></i>
           <i class="fa-solid fa-cart-shopping bg-white border p-2 rounded-full"></i>  
        <a class="btn bg-[#ABEF5F] rounded-xl">Book Consult <i class="fa-solid fa-arrow-right border-2 -rotate-45 border-black rounded-full text-white bg-black p-1"></i></a>
-      </div>    
+      </div>  
+     </div>  
     </div>
     <section>
       <div class="card">
@@ -156,7 +178,7 @@
       </section>
       <section>
         <div class="text-center mb-6 space-y-5">
-          <button class="border bg-primary rounded-2xl px-4 py-2"><i class="fa-solid fa-arrow-right"></i>Explore Our Latest Works</button>
+          <button class="border bg-primary rounded-2xl px-4"><i class="fa-solid fa-arrow-right"></i>Explore Our Latest Works</button>
           <h2 class="font-extrabold text-4xl">Our Latest Portfolio</h2>
           <p class="text-gray-600">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
           </div>
@@ -166,7 +188,7 @@
               <div class="hero-content flex-col lg:flex-row">
                 <img
                   src="assets/img1.png"
-                  class=" rounded-xl shadow-2xl" />
+                  class="w-full rounded-xl shadow-2xl" />
                 <div>
                   <h1 class="text-2xl font-bold">Commercial</h1>
                   <p class="py-3 text-gray-500">
@@ -186,11 +208,11 @@
               <div class="hero-content flex-col lg:flex-row">
                 <img
                   src="assets/img4.png"
-                  class=" rounded-xl shadow-2xl" />
+                  class="w-full rounded-xl shadow-2xl" />
                 <div>
                   <h1 class="text-2xl font-bold">Commercial</h1>
                   <p class="py-3 text-gray-500">
-                    The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .
+                    The barn house captivates with its blend of rustic charm and modern. 
                   </p>
                   <a class="font-bold" href="">View Details <i class="fa-solid fa-arrow-right border-2 -rotate-45 rounded-full  bg-bg-primary p-1"></i></a>
                 </div>
@@ -212,7 +234,7 @@
           <div class="grid grid-cols-1 lg:grid-cols-3 mx-auto px-32 gap-6 py-20">
             <div class="card bg-base-100 shadow-xl">
               <figure class="pt-7">
-                <img
+                <img class="p-3"
                   src="assets/article1.png"
                   alt="" />
               </figure>
@@ -228,7 +250,7 @@
             </div>
             <div class="card bg-base-100 shadow-xl">
               <figure class="pt-7">
-                <img
+                <img class="p-3"
                   src="assets/article2.png"
                   alt="" />
               </figure>
@@ -244,7 +266,7 @@
             </div>
             <div class="card bg-base-100 shadow-xl">
               <figure class="pt-7">
-                <img
+                <img class="p-3"
                   src="assets/article3.png"
                   alt="" />
               </figure>
@@ -270,18 +292,34 @@
           <p class="text-gray-600">The barn house captivates with its blend of rustic charm and modern sophistication, <br>featuring weathered wood, sleek metal accents.</p>
           </div>
           <!-- form section  -->
-           <div class="grid grid-cols-1 lg:grid-cols-2 grid-rows-7 text-gray-400 gap-6 px-56">
-            <input class="py-3 px-12 rounded-3xl" type="text" name="" placeholder="First Name*">
-            <input class="py-3 px-12 rounded-3xl" type="text" name="" placeholder="Last Name*">
-            <input class="py-3 px-12 rounded-3xl" type="number" name="" placeholder="Phone Number*">
-            <input class="py-3 px-12 rounded-3xl" type="email" name="" placeholder="Email Number*">
-            <input class="col-span-2 row-span-4 rounded-3xl mb-14 align-text-top " type="text" name="" placeholder="Write your message here">
+           <div class="grid grid-cols-1  lg:grid-cols-2 grid-rows-5 text-gray-400 gap-6 px-40 justify-center">
+            <input class="py-3 px-10 rounded-3xl" type="text" name="" placeholder="First Name*">
+            <input class="py-3 px-10 rounded-3xl" type="text" name="" placeholder="Last Name*">
+            <input class="py-3 px-10 rounded-3xl" type="number" name="" placeholder="Phone Number*">
+            <input class="py-3 px-10 rounded-3xl" type="email" name="" placeholder="Email Number*">
+            <input class="col-span-2 row-span-2 rounded-3xl mb-14 align-text-top " type="text" name="" placeholder="Write your message here">
             <button class="bg-bg-primary text-black font-bold py-3 rounded-3xl col-span-2 mb-24">Send Mail <i class="fa-solid fa-arrow-right border-2 -rotate-45 border-black rounded-full text-white bg-black p-1"></i></button>
 
            </div>
        </section>
 
     </main>
+    <footer class="footer footer-center bg-black text-base-content rounded p-10">
+      <div class="flex gap-5 text-center">
+        <i class="fa-solid fa-arrow-right border -rotate-45 rounded-full bg-[#ABEF5F] p-1"></i>
+        <h3 class="font-bold text-4xl text-white">Rinterio</h3>
+        </div>
+        <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+        
+      <nav class="grid grid-flow-row lg:grid-flow-col text-white gap-4">
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">Services</a>
+        <a class="link link-hover">Portfolio</a>
+        <a class="link link-hover">Blogs</a>
+        <a class="link link-hover">Contact Us</a>
+      </nav>
+      <a class="btn px-6 bg-[#ABEF5F] rounded-xl flex">Book Consult<i class="fa-solid fa-arrow-right border-2 -rotate-45 border-black rounded-full text-white bg-black p-1"></i></a>
+    </footer>
     
 </body>
 </html>
